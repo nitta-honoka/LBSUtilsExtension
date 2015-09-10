@@ -103,7 +103,7 @@ function isPointOnPloylineTest(point, polygon) {
     return false;
 }
 /**
- * 判断点是否在折线上，如果判断为真则在折线上生成离该点最近的点
+ * 判断点是否在折线上，如果判断为真则在折线上生成离该点最近的点,否则返回鼠标点坐标
  * @param point 鼠标点
  * @param polygon 区域多边形对象
  * @returns 如果判断点不在折线上则返回该点（point），如果判断点在折线上则返回计算出的折线最近点（
