@@ -186,7 +186,7 @@ isPointOnPloyline = function() {
   }
   return {
     //只需判断调用第一个别名，需要生成点调用第二个别名
-    isPointOnPloylineTest: isPointOnPloylineTest;
-    isPointOnPloylineTest_02: isPointOnPloylineTest_02;
+    isPointOnPloylineTest: isPointOnPloylineTest,
+    isPointOnPloylineTest_02: isPointOnPloylineTest_02
   }
 }();
