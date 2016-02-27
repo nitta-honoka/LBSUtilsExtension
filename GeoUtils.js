@@ -69,17 +69,7 @@ isPointOnPloyline = function () {
         return (point.lng >= sw.lng && point.lng <= ne.lng && point.lat >= sw.lat && point.lat <= ne.lat);
 
     }
-    /**
-     * 比较两个距离的大小，用于存放距离的数组进行排序时传入的函数
-     * @method compare
-     * @param  {number} val1 前一项
-     * @param  {number} val2 后一项
-     * @return {number} 大于零：后项比前项大
-     * @author honoka
-     */
-    function compare(val1, val2) {
-        return val2 - val1;
-    }
+
     /**
      * 判断点是否在折线上，如果需要在折线上生成最近点，则使用下一个方法
      * @param point 鼠标点
@@ -92,7 +82,7 @@ isPointOnPloyline = function () {
         if (!isPointInRect(point, lineBounds)) {
             return false;
         }
-        var disArray = new Array(); //存储最短距离
+        var disArray = []; //存储最短距离
         var pts = polygon.getPath();
         var curPt = null; //折线的两个相邻点
         var nextPt = null;
@@ -104,7 +94,7 @@ isPointOnPloyline = function () {
             //先将存储最短距离的数组排序
             disArray.push(dis);
 
-            disArray.sort(compare);
+            disArray.sort();
 
         }
         var disMin = disArray[0]; //取得数组中最小的最短距离
@@ -127,8 +117,8 @@ isPointOnPloyline = function () {
         if (!isPointInRect(point, lineBounds)) {
             return point;
         }
-        var disArray = new Array(); //存储最短距离
-        var pointArray = new Array(); //存储折线相邻点
+        var disArray = []; //存储最短距离
+        var pointArray = []; //存储折线相邻点
         var pts = polygon.getPath();
         var curPt = null; //折线的两个相邻点
         var nextPt = null;
