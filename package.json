@@ -1,0 +1,40 @@
+{
+  "name": "amap-utils-extension",
+  "version": "0.1.0",
+  "description": "A extension open source library about Amap LBS JavaScript API",
+  "main": "build/index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitta-honoka/LBSUtilsExtension.git"
+  },
+  "keywords": [
+    "lbs",
+    "util",
+    "amap",
+    "gaode"
+  ],
+  "author": "nitta-honoka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitta-honoka/LBSUtilsExtension/issues"
+  },
+  "homepage": "https://github.com/nitta-honoka/LBSUtilsExtension#readme",
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}

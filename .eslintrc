@@ -1,0 +1,10 @@
+
+{
+  "extends": "airbnb",
+  "rules": {
+    "semi": 0,
+    "no-mixed-operators": 0,
+    "indent": [1, 2],
+    "vars-on-top": 0
+  },
+}
