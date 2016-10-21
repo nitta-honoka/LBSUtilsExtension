@@ -1,6 +1,6 @@
 {
   "name": "amap-utils-extension",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A extension open source library about Amap LBS JavaScript API",
   "main": "build/index.min.js",
   "scripts": {
