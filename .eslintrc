@@ -5,6 +5,8 @@
     "semi": 0,
     "no-mixed-operators": 0,
     "indent": [1, 2],
-    "vars-on-top": 0
+    "vars-on-top": 0,
+    "one-var": 0,
+    "one-var-declaration-per-line": 0
   },
 }
